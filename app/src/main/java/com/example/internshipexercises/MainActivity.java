@@ -1,5 +1,6 @@
 package com.example.internshipexercises;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -40,9 +41,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        outState.putString("incrm",incrementTv.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        incrementTv.setText(savedInstanceState.getString("incrm"));
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
-        ;
         Log.d(TAG, "onStart: I exist, but you cannot see me");
     }
 
