@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">InternshipExercises</string>
-    <string name="label_increment">Label</string>
+    <string name="restaurant_icon_content_description">Restaurant Icon</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="button">Button</string>
+    <string name="floating">Floating</string>
+    <string name="bottom">Bottom</string>
+    <string name="invisible">Invisible</string>
+    <string name="restaurant_text">The Clink Restaurant at HMP Brixton opened in February 2014 as the third restaurant</string>
+
 </resources>

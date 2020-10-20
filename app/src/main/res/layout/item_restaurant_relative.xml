@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/min_height_list_item">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/list_item_icon_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/restaurant_icon_content_description"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars" />
+    <TextView
+        android:id="@+id/list_item_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/list_item_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/padding_16"
+        android:paddingTop="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="@tools:sample/cities"/>
+    <TextView
+        android:id="@+id/list_item_secondary_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_text"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/list_item_icon"
+        android:alpha="0.6"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingStart="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        tools:text="@tools:sample/lorem/random" />
+
+</RelativeLayout>

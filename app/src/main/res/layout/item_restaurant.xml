@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="64dp"
+    app:layout_optimizationLevel="">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="@dimen/list_item_icon_size"
+        android:layout_height="@dimen/list_item_icon_size"
+        android:layout_marginBottom="631dp"
+        android:contentDescription="@string/restaurant_icon_content_description"
+        android:padding="@dimen/padding_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/list_item_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_restaurant_menu_24" />
+
+    <TextView
+        android:id="@+id/list_item_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:maxLines="1"
+        android:paddingStart="@dimen/padding_16"
+        android:paddingTop="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@+id/list_item_secondary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/list_item_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="The Clink Restaurant" />
+
+    <TextView
+        android:id="@+id/list_item_secondary_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="632dp"
+        android:maxLines="2"
+        android:paddingStart="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/list_item_icon"
+        app:layout_constraintTop_toBottomOf="@+id/list_item_text"
+        android:text="@string/restaurant_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
